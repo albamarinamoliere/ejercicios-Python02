@@ -1,0 +1,98 @@
+def procedimiento (lista):
+    for i in lista:
+        print i * "x"
+
+
+def max_in_list(lista):
+    inicio = 0
+    for i in lista:
+    if i > inicio:
+        inicio = i
+    return inicio
+
+. def mas_larga(lista):
+    mas_larga = ""
+    for i in lista:
+        if len(i) > len(mas_larga):
+            mas_larga = i
+    return mas_larga
+
+def filtrar_palabralarga(lista, n):
+    for i in lista:
+        if len(i) > n:
+            print i
+
+def inversa (cadena):
+    invertida = ""
+    cont = len(cadena)
+    indice = -1
+    while cont >= 1:
+        invertida += cadena[indice]
+        indice = indice + (-1)
+        cont -= 1
+    return invertida
+
+def max (n1, n2):
+    if n1 < n2:
+        print n2
+    elif n2 < n1:
+        print n1
+    else:
+        print "Son iguales"
+
+
+def max_de_tres (a, b, c):
+    if a > b and a > c:
+        print a
+    elif b > a and b > c:
+        print b
+    elif c > a and c > b:
+        print c
+    else:
+        print "Son iguales"
+
+def largo_cadena (lista):
+    cont = 0
+    for i in lista:
+        cont += 1
+    return cont
+
+def es_vocal (x):
+    if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+        return True
+    elif x == "A" or x == "E" or x == "I" or x == "O" or x == "U":
+        return True
+    else:
+        return False
+
+ def sum (lista):
+    suma = 0
+    for i in lista:
+        suma += i
+    return suma
+
+def multip (lista):
+    multiplicacion = 1
+    for i in lista:
+        multiplicacion *= i
+    return multiplicacion
+
+ def es_palindromo(original):
+
+	txt=list(palabra)
+	txt.reverse()
+	cadena = "".join(txt)
+	if cadena == original:
+		print True
+	else:
+		print False
+
+
+def es_palindromo2(original):
+	cadena = original[::-1]
+	print cadena == original
+
+
+
+def generar_n_caracteres (n, caracter):
+    print n * carácter
